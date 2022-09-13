@@ -22,7 +22,7 @@ public class CameraMotor : MonoBehaviour
             }
             else
             {
-                delta.x = deltaX - boundX;
+                delta.x = deltaX + boundX;
             }
         }
 
@@ -36,7 +36,7 @@ public class CameraMotor : MonoBehaviour
             }
             else
             {
-                delta.y = deltaY - boundY;
+                delta.y = deltaY + boundY;
             }
         }
 
