@@ -53,3 +53,6 @@ TagManager:
   - name: Interactable
     uniqueID: 1622664597
     locked: 0
+  - name: Trees
+    uniqueID: 2300682561
+    locked: 0
