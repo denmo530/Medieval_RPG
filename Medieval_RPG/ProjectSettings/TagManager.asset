@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fighter
   layers:
   - Default
   - TransparentFX
@@ -44,6 +45,9 @@ TagManager:
   - name: Floor
     uniqueID: 416191307
     locked: 0
+  - name: Weapon
+    uniqueID: 3350789975
+    locked: 0
   - name: Actor
     uniqueID: 4264465527
     locked: 0
@@ -52,4 +56,7 @@ TagManager:
     locked: 0
   - name: Interactable
     uniqueID: 1622664597
+    locked: 0
+  - name: Trees
+    uniqueID: 2300682561
     locked: 0
