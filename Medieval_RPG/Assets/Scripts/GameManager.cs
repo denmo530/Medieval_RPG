@@ -11,11 +11,14 @@ public class GameManager : MonoBehaviour
         if (GameManager.instance != null)
         {
             Destroy(gameObject);
+            Destroy(player.gameObject);
+            Destroy(floatingTextManager.gameObject);
+            Destroy(hud);
+            Destroy(menu);
             return;
         }
         instance = this;
         SceneManager.sceneLoaded += LoadState;
-        DontDestroyOnLoad(gameObject);
     }
     //Ressources
     public List<Sprite> playerSprites;
@@ -27,8 +30,10 @@ public class GameManager : MonoBehaviour
     //References
     public Player player;
     public Weapon weapon;
-
     public FloatingTextManager floatingTextManager;
+    public RectTransform hitpointBar;
+    public GameManager hud;
+    public GameObject menu;
 
     //Logic
     public int pesos;
@@ -52,6 +57,14 @@ public class GameManager : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    //Hitpoint bar
+    public void OnHitpointChange()
+    {
+        float ratio = (float)player.hitPoint / (float)player.maxHitpoint;
+        hitpointBar.localScale = new Vector3(ratio, 1, 1);
+
     }
 
     // Experince system
@@ -92,6 +105,7 @@ public class GameManager : MonoBehaviour
     public void OnLevelUp()
     {
         Debug.Log("Level up!");
+        player.onLevelUp();
     }
     //Save state
     /*  
@@ -122,9 +136,19 @@ public class GameManager : MonoBehaviour
 
         //Change player skin
         pesos = int.Parse(data[1]);
+        // If higher level then level up at start
+
+        //experience
         experience = int.Parse(data[2]);
+        if (GetCurrentLevel() != 1)
+            player.setLevel(GetCurrentLevel());
+
         //Change the weapon level
         weapon.SetWeaponLevel(int.Parse(data[3]));
+
+
+        // Spawn player on spawnpoint when we load the scene 
+        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
         Debug.Log("LoadState");
     }
 }

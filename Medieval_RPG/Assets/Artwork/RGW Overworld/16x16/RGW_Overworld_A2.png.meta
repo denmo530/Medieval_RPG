@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 99
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -4175,17 +4175,17 @@ TextureImporter:
       RGW_Overworld_A2_50: 492351085
       RGW_Overworld_A2_185: 747403754
       RGW_Overworld_A2_1: 1763013085
+      RGW_Overworld_A2_64: 1135487691
       RGW_Overworld_A2_4: 1327225539
-      RGW_Overworld_A2_51: -1276703259
       RGW_Overworld_A2_19: 445875883
       RGW_Overworld_A2_140: -1713887709
-      RGW_Overworld_A2_64: 1135487691
+      RGW_Overworld_A2_51: -1276703259
+      RGW_Overworld_A2_163: 1422332849
       RGW_Overworld_A2_118: -1502060287
       RGW_Overworld_A2_129: 1172521370
-      RGW_Overworld_A2_163: 1422332849
+      RGW_Overworld_A2_176: 1610878894
       RGW_Overworld_A2_108: 583469275
       RGW_Overworld_A2_62: -48801338
-      RGW_Overworld_A2_176: 1610878894
       RGW_Overworld_A2_126: 1946134517
       RGW_Overworld_A2_159: 943275138
       RGW_Overworld_A2_69: -219401574
@@ -4290,9 +4290,9 @@ TextureImporter:
       RGW_Overworld_A2_77: -1829977122
       RGW_Overworld_A2_56: 976295150
       RGW_Overworld_A2_102: -2123134037
-      RGW_Overworld_A2_98: 1817648708
       RGW_Overworld_A2_156: 545597274
       RGW_Overworld_A2_177: -564569560
+      RGW_Overworld_A2_98: 1817648708
       RGW_Overworld_A2_142: 1933749169
       RGW_Overworld_A2_15: -306845313
       RGW_Overworld_A2_125: 845468028
