@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
         }
         instance = this;
         SceneManager.sceneLoaded += LoadState;
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
     //Ressources
     public List<Sprite> playerSprites;
@@ -32,7 +33,7 @@ public class GameManager : MonoBehaviour
     public Weapon weapon;
     public FloatingTextManager floatingTextManager;
     public RectTransform hitpointBar;
-    public GameManager hud;
+    public GameObject hud;
     public GameObject menu;
 
     //Logic
@@ -104,8 +105,8 @@ public class GameManager : MonoBehaviour
     }
     public void OnLevelUp()
     {
-        Debug.Log("Level up!");
         player.onLevelUp();
+        OnHitpointChange();
     }
     //Save state
     /*  
@@ -114,6 +115,13 @@ public class GameManager : MonoBehaviour
     INT experience
     INT weaponLevel1
     */
+    //on scene loaded
+    public void OnSceneLoaded(Scene s, LoadSceneMode mode)
+    {
+        // Spawn player on spawnpoint when we load the scene 
+        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+    }
+
     public void SaveState()
     {
         string s = "";
@@ -127,6 +135,7 @@ public class GameManager : MonoBehaviour
     }
     public void LoadState(Scene s, LoadSceneMode mode)
     {
+        SceneManager.sceneLoaded -= LoadState;
         if (!PlayerPrefs.HasKey("SaveState"))
         {
             return;
@@ -146,9 +155,5 @@ public class GameManager : MonoBehaviour
         //Change the weapon level
         weapon.SetWeaponLevel(int.Parse(data[3]));
 
-
-        // Spawn player on spawnpoint when we load the scene 
-        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
-        Debug.Log("LoadState");
     }
 }
