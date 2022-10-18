@@ -804,6 +804,26 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -81, y: -18, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 20
+      m_TileSpriteIndex: 20
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -80, y: -18, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 19
+      m_TileSpriteIndex: 19
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -55, y: -18, z: 0}
     second:
       serializedVersion: 2
@@ -839,6 +859,26 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 8
       m_TileSpriteIndex: 8
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -81, y: -17, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 23
+      m_TileSpriteIndex: 23
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -80, y: -17, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 24
+      m_TileSpriteIndex: 24
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -4434,14 +4474,18 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 2cf9331dca4fa41bdbc7ac225542309c, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: be9797e33d8db411e97add1be5c48377, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: f8033d8d29ba24e57958274f28d80d06, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 8ab34fdc0a7674553a26904c53527a6c, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: bc990dd397d7647a993806fcbab7fc88, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: a3c719cedb7ce440bbfd2aa6fbf48854, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: cebf3c2863df945008cfa284cfde5ac8, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 385fc766bd1994047b419700f2799fb4, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 34
     m_Data: {fileID: -723266799, guid: 8cf32340c63f5437bb2171170dc29178, type: 3}
@@ -4481,16 +4525,20 @@ Tilemap:
     m_Data: {fileID: -1664397379, guid: 8cf32340c63f5437bb2171170dc29178, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: -1770997731, guid: 8cf32340c63f5437bb2171170dc29178, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 323564179, guid: 8cf32340c63f5437bb2171170dc29178, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 948445422, guid: 8cf32340c63f5437bb2171170dc29178, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 59955364, guid: 34ed14530471347e88b253a23bfa0b52, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 492293052, guid: 34ed14530471347e88b253a23bfa0b52, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 816153213, guid: 8cf32340c63f5437bb2171170dc29178, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -1649547042, guid: 8cf32340c63f5437bb2171170dc29178, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 418
+  - m_RefCount: 422
     m_Data:
       e00: 1
       e01: 0
@@ -4509,13 +4557,13 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 418
+  - m_RefCount: 422
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -57, y: -32, z: 0}
-  m_Size: {x: 112, y: 44, z: 1}
+  m_Origin: {x: -81, y: -32, z: 0}
+  m_Size: {x: 136, y: 44, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
