@@ -20,6 +20,8 @@ public class Enemy : Mover
     private Collider2D[] hits = new Collider2D[10];
     public ContactFilter2D filter;
 
+    [SerializeField] private AudioSource monsterDeathSoundEffect;
+    [SerializeField] private AudioSource monsterAttackSoundEffect;
     protected override void Start()
     {
         base.Start();
@@ -27,7 +29,6 @@ public class Enemy : Mover
         startingPosition = transform.position;
         hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
     }
-
     private void FixedUpdate()
     {
 
@@ -61,6 +62,7 @@ public class Enemy : Mover
         boxCollider.OverlapCollider(filter, hits);
         for (int i = 0; i < hits.Length; i++)
         {
+
             if (hits[i] == null)
                 continue;
 
@@ -68,18 +70,13 @@ public class Enemy : Mover
             {
                 collidingWithPlayer = true;
             }
-
             // The array is not cleaned up, so we do it ourselfs
             hits[i] = null;
         }
-
-
-
-
     }
-
     protected override void Death()
     {
+        monsterDeathSoundEffect.Play();
         Destroy(gameObject);
         GameManager.instance.GrantXp(xpValue);
         GameManager.instance.ShowText("+" + xpValue + " xp", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);

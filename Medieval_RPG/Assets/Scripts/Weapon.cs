@@ -54,12 +54,9 @@ public class Weapon : Collidable
                 pushForce = pushForce[weaponLevel]
             };
             coll.SendMessage("ReceiveDamage", dmg);
-
             //Debug.Log(coll.name);
         }
-
     }
-
     private void Swing()
     {
         anim.SetTrigger("Swing");

@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8250278433594464771, guid: 3367004b5a324492d8d8a7f6b2a4accf, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a40772278a39d8f4386133e04c4cefd4, type: 3}
+    - target: {fileID: 8456092407086913140, guid: 3367004b5a324492d8d8a7f6b2a4accf, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a40772278a39d8f4386133e04c4cefd4, type: 3}
     - target: {fileID: 8912716436051822368, guid: 3367004b5a324492d8d8a7f6b2a4accf, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -55,9 +63,27 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -919054684, guid: 69c889d9559df4ea7ba8f2cd5d68d65e, type: 3}
+    - target: {fileID: 8912716436051822371, guid: 3367004b5a324492d8d8a7f6b2a4accf, type: 3}
+      propertyPath: monsterAttackSoundEffect
+      value: 
+      objectReference: {fileID: 4551389719215066263}
     - target: {fileID: 8912716436051822399, guid: 3367004b5a324492d8d8a7f6b2a4accf, type: 3}
       propertyPath: m_Name
-      value: SmallEnemy_5
+      value: SmallEnemy_5 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8912716437111121888, guid: 3367004b5a324492d8d8a7f6b2a4accf, type: 3}
+      propertyPath: monsterAttackSoundEffect
+      value: 
+      objectReference: {fileID: 4038949785192890592}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3367004b5a324492d8d8a7f6b2a4accf, type: 3}
+--- !u!82 &4038949785192890592 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8456092407086913140, guid: 3367004b5a324492d8d8a7f6b2a4accf, type: 3}
+  m_PrefabInstance: {fileID: 5572967404538631828}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &4551389719215066263 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8250278433594464771, guid: 3367004b5a324492d8d8a7f6b2a4accf, type: 3}
+  m_PrefabInstance: {fileID: 5572967404538631828}
+  m_PrefabAsset: {fileID: 0}

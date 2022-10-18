@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 924592726100740052}
   - component: {fileID: 2160621296666410949}
   - component: {fileID: 9065283853435757017}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Crate
   m_TagString: Fighter
   m_Icon: {fileID: 0}
@@ -128,6 +128,7 @@ MonoBehaviour:
   hitPoint: 2
   maxHitpoint: 2
   pushRecoverySpeed: 0.2
+  woodSoundEffect: {fileID: 9065283853435757017}
 --- !u!82 &9065283853435757017
 AudioSource:
   m_ObjectHideFlags: 0
@@ -138,8 +139,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 5c3b71f6331ea44469a49e1ba927d607, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
