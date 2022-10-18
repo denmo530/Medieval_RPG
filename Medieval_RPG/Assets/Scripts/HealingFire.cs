@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HealingFire : Collidable
 {
+    [SerializeField] private AudioSource fireSoundEffect;
     public int healingAmount = 1;
     private float healCooldown = 1.0f;
     private float lastHeal;

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Weapon : Collidable
 {
 
+    [SerializeField] private AudioSource swordSoundEffect;
 
     // Damage struct
     public int[] damagePoint = { 1, 2, 4, 5, 6, 8 };
@@ -62,6 +63,8 @@ public class Weapon : Collidable
     private void Swing()
     {
         anim.SetTrigger("Swing");
+        swordSoundEffect.Play();
+
     }
 
     public void UpgradeWeapon()
