@@ -5,6 +5,7 @@ using UnityEngine;
 public class Chest : Collectible
 {
 
+    [SerializeField] private AudioSource coinSoundEffect;
     public Sprite emptyChest;
     public int pesosAmount = 5;
     protected override void OnCollect()
@@ -15,6 +16,8 @@ public class Chest : Collectible
             GetComponent<SpriteRenderer>().sprite = emptyChest;
             GameManager.instance.ShowText("+" + pesosAmount + " coins!", 25, Color.yellow, transform.position, Vector3.up * 25, 1.5f);
             GameManager.instance.pesos += pesosAmount;
+            coinSoundEffect.Play();
+
         }
     }
 }
